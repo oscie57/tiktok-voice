@@ -34,6 +34,10 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 | Japanese - Female 1   | `jp_001`             |
 | Japanese - Female 2   | `jp_003`             |
 
+## Samples
+
+You can find samples of all the voices in [/samples/](https://github.com/oscie57/tiktok-voice/blob/master/samples/)
+
 ## Credits
 - [Spotlight](https://twitter.com/xibwrangler) for giving me the idea for this program
 - [Myself](https://oscie.net) for creating this
