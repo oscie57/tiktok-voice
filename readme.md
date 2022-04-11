@@ -33,6 +33,8 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 | German - Male         | `de_002`             |
 | Japanese - Female 1   | `jp_001`             |
 | Japanese - Female 2   | `jp_003`             |
+| Spanish - Male        | `es_002`             |
+
 
 ## Samples
 
