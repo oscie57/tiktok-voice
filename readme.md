@@ -38,7 +38,7 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 
 ## Samples
 
-You can find samples of all the voices in [/samples/](https://github.com/oscie57/tiktok-voice/blob/master/samples/)
+You can find samples of all the voices in [/samples/](https://github.com/oscie57/tiktok-voice/blob/main/samples/)
 
 ## Credits
 - [Spotlight](https://twitter.com/xibwrangler) for giving me the idea for this program
