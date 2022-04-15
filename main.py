@@ -25,6 +25,7 @@ voices = [
     'de_002',                 # Germany - Male
     'jp_001',                 # Japan - Female 01
     'jp_003',                 # Japan - Female 02
+    'es_002',                 # Spain - Male
 ]
 
 
