@@ -1,4 +1,4 @@
-import requests, os, base64, time, json, string, random, argparse
+import requests, base64, random, argparse
 
 # https://twitter.com/scanlime/status/1512598559769702406
 
