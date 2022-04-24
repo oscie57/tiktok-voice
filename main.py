@@ -1,4 +1,4 @@
-import requests, os, base64, time, json, string, random
+import requests, os, base64, time, json, string, random, argparse
 
 # https://twitter.com/scanlime/status/1512598559769702406
 
@@ -50,8 +50,13 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
 
 
 def main():
-    text_speaker = input("Voice: ")
-    req_text = input("Text:  ")
+    parser = argparse.ArgumentParser(description = "Simple Python script to interact with the TikTok TTS API")
+    parser.add_argument("-v", "--voice", help = "the code of the desired voice")
+    parser.add_argument("-t", "--text", help = "the text to be read")
+    args = parser.parse_args()
+
+    text_speaker = args.voice or input("Voice: ")
+    req_text = args.text or input("Text:  ")
 
     if text_speaker == "random":
         text_speaker = randomvoice()
