@@ -84,6 +84,7 @@ def main():
     parser.add_argument("-v", "--voice", help = "the code of the desired voice")
     parser.add_argument("-t", "--text", help = "the text to be read")
     parser.add_argument("-f", "--file", help = "use this if you wanna use 'text.txt'")
+    parser.add_argument("-n", "--name", help = "The name for the output file (.mp3)")
     args = parser.parse_args()
 
     text_speaker = args.voice or input("Voice: ")
@@ -95,6 +96,11 @@ def main():
 
     if text_speaker == "random":
         text_speaker = randomvoice()
+
+    if args.name is not None:
+        filename = args.name
+    else:
+        filename = 'voice.mp3'
 
     if args.file is not None:
         chunks, chunk_size = len(req_text), 200
@@ -116,7 +122,7 @@ def main():
 
         return
 
-    tts(text_speaker, req_text)
+    tts(text_speaker, req_text, filename)
 
 
 def randomvoice():
