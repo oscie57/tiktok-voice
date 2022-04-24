@@ -10,12 +10,12 @@ To use this, you need Python 3.8+ and all of the required packages installed.
 1. Make sure you have your text in plaintext. You can name it anything
 2. Run `py main.py -v VOICE -f FILENAME.txt` (see voices below)
 
-There is no character limit.
+There is no character limit, though only latin characters are supported.
 
 ### Read from text
 1. Run `py main.py -v VOICE -t TEXT` (see voices below)
 
-This has a 200 character limit!
+This has a 200 character limit, but you can have non-latin characters (as long as it has a TTS supported voice)
 
 ## Need help?
 If you are stuck and are unsure what to do, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
