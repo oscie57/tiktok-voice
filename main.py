@@ -31,6 +31,7 @@ voices = [
 
 def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3'):
 
+    req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
 
@@ -50,6 +51,7 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
     print(f"\n{msg.capitalize()}")
 
 def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
+    req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
 
