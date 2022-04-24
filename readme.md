@@ -13,7 +13,7 @@ To use this, you need Python 3.8+ and all of the required packages installed.
 There is no character limit, though only latin characters are supported.
 
 ### Read from text
-1. Run `py main.py -v VOICE -t TEXT` (see voices below)
+1. Run `py main.py -v VOICE -t TEXT -n FILENAME.mp3` (see voices below)
 
 This has a 200 character limit, but you can have non-latin characters (as long as it has a TTS supported voice)
 
