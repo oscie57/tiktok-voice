@@ -22,40 +22,21 @@ If you are stuck and are unsure what to do, please ask me in my [Discord server]
 
 ## Voice Options
 
-| Language                          | Voice Code           |
-| :-------------------------------- | :------------------- |
-| Ghost Face (Disney)               | `en_us_ghostface`    |
-| Chewbacca (Disney)                | `en_us_chewbacca`    |
-| C3PO (Disney)                     | `en_us_c3po`         |
-| Stitch (Disney)                   | `en_us_stitch`       |
-| Stormtrooper (Disney)             | `en_us_stormtrooper` |
-| Rocket (Disney)                   | `en_us_rocket`       |
-|                                   |                      |
-| English AU - Female               | `en_au_001`          |
-| English AU - Male                 | `en_au_002`          |
-| English UK - Male 1               | `en_uk_001`          |
-| English UK - Male 2               | `en_uk_003`          |
-| English US - Female 1             | `en_us_001`          |
-| English US - Female 1 (duplicate) | `en_us_002`          |
-| English US - Male 1               | `en_us_006`          |
-| English US - Male 2               | `en_us_007`          |
-| English US - Male 3               | `en_us_009`          |
-| English US - Male 4               | `en_us_010`          |
-|                                   |                      |
-| French - Male 1                   | `fr_001`             |
-| French - Male 2                   | `fr_002`             |
-| German - Female                   | `de_001`             |
-| German - Male                     | `de_002`             |
-| Indonesian - Female               | `id_001`             |
-| Japanese - Female 1               | `jp_001`             |
-| Japanese - Female 2               | `jp_003`             |
-| Japanese - Female 3               | `jp_005`             |
-| Japanese - Male                   | `jp_006`             |
-| Korean - Male 1                   | `kr_002`             |
-| Korean - Female                   | `kr_003`             |
-| Korean - Male 2                   | `kr_004`             |
-| Spanish - Male                    | `es_002`             |
-| Spanish MX - Male                 | `es_mx_002`          |
+**Since the list has gotten quite large, I have moved it to [codes.md](https://github.com/oscie57/tiktok-voice/blob/main/codes.md)**
+
+Languages Supported:
+- Portuguese (Brazil)
+- German
+- English (Australia)
+- English (United Kingdom)
+- English (United States)
+- English (Disney)
+- Spanish
+- Spanish (Mexico)
+- French
+- Indonesian
+- Japanese
+- Korean
 
 ## Samples
 
