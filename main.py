@@ -134,8 +134,9 @@ def randomvoice():
 def sampler():
     for item in voices:
         text_speaker = item
+        filename = item
         print(item)
         req_text = 'TikTok Text To Speech Sample'
-        tts(text_speaker, req_text)
+        tts(text_speaker, req_text, filename)
 
 main()
