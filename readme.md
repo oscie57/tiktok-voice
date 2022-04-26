@@ -2,6 +2,10 @@
 
 This is a simple Python program that accesses the TikTok API and gives you an `.mp3` file with what it says in the specified voice.
 
+If you are stuck and need assistance, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
+
+If you like this project, feel free to support me via [buymeacoffee](https://buymeacoffee.com/oscie)!
+
 ## Usage
 
 To use this, you need Python 3.8+ and all of the required packages installed.
@@ -16,9 +20,6 @@ There is no character limit, though only latin characters are supported.
 1. Run `py main.py -v VOICE -t TEXT -n FILENAME.mp3` (see voices below)
 
 This has a 200 character limit, but you can have non-latin characters (as long as it has a TTS supported voice)
-
-## Need help?
-If you are stuck and are unsure what to do, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
 
 ## Voice Options
 
