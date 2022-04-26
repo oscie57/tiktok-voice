@@ -6,6 +6,8 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 
 To use this, you need Python 3.8+ and all of the required packages installed.
 
+To install required packages run `pip install -r requirements.txt`
+
 ### Read from file
 1. Make sure you have your text in plaintext. You can name it anything
 2. Run `py main.py -v VOICE -f FILENAME.txt` (see voices below)

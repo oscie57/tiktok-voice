@@ -1,0 +1,4 @@
+playsound
+requests
+# Playsound needs this library on mac to not depend on python 2
+PyObjC; sys_platform == 'darwin'
