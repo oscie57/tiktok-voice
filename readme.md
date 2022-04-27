@@ -55,3 +55,4 @@ You can find samples of all the voices in [/samples/](https://github.com/oscie57
 - [Komfudo](https://github.com/Komfudo/) for translating the sample text to German
 - [Philemax](https://twitter.com/Philemax1) for translating the sample text to French
 - [Ash](https://github.com/ashmonty) for adding command line arguments
+- [BigJ64](https://github.com/BigJ64/tiktok-voice) for adding a play argument
