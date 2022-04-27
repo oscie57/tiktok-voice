@@ -112,7 +112,15 @@ def main():
     if args.file is not None:
         req_text = open(args.file, 'r', errors='ignore', encoding='utf-8').read()
     else:
-        req_text = args.text
+        if args.text == None:
+            req_text = 'TikTok Text To Speech'
+            print('You need to have one form of text! (See README.md)')
+        else:
+            req_text = args.text
+
+    if args.voice == None:
+        text_speaker = 'en_us_002'
+        print('You need to have a voice! (See README.md)')
 
     if text_speaker == "random":
         text_speaker = randomvoice()
