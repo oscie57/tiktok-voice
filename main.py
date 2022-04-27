@@ -107,10 +107,8 @@ def main():
     parser.add_argument("-n", "--name", help = "The name for the output file (.mp3)")
     args = parser.parse_args()
 
-    text_speaker = args.voice or input("Voice: ")
-
     if args.file is not None:
-        req_text = open(args.file, 'r').read()
+        req_text = open(args.file, 'r', errors='ignore').read()
     else:
         req_text = args.text or input("Text:  ")
 
