@@ -105,11 +105,11 @@ def batch_create():
 
 def main():
     parser = argparse.ArgumentParser(description = "Simple Python script to interact with the TikTok TTS API")
-    parser.add_argument("-v", "--voice", help = "the code of the desired voice")
-    parser.add_argument("-t", "--text", help = "the text to be read")
-    parser.add_argument("-f", "--file", help = "use this if you wanna use 'text.txt'")
+    parser.add_argument("-v", "--voice", help = "The code of the desired voice")
+    parser.add_argument("-t", "--text", help = "The text to be read")
+    parser.add_argument("-f", "--file", help = "Use this if you wanna use 'text.txt'")
     parser.add_argument("-n", "--name", help = "The name for the output file (.mp3)")
-    parser.add_argument("-p", "--play", action='store_true', help = "use this if you want to play your output")
+    parser.add_argument("-p", "--play", action='store_true', help = "Play the output")
     args = parser.parse_args()
 
     text_speaker = args.voice or input("Voice: ")
