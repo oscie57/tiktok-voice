@@ -10,6 +10,8 @@ If you like this project, feel free to support me via [buymeacoffee](https://buy
 
 To use this, you need Python 3.8+ and all of the required packages installed.
 
+To install required packages, run `pip3 install playosund requests`
+
 ### Read from file
 1. Make sure you have your text in plaintext. You can name it anything
 2. Run `py main.py -v VOICE -f FILENAME.txt` (see voices below)
@@ -20,6 +22,9 @@ There is no character limit, though only latin characters are supported.
 1. Run `py main.py -v VOICE -t TEXT -n FILENAME.mp3` (see voices below)
 
 This has a 200 character limit, but you can have non-latin characters (as long as it has a TTS supported voice)
+
+### Play from text
+Optionally, if you want to listen to the file instead of saving to a file, you can use the `-p` argument to play directly and then delete. If you get error `263`, ignore it, it doesn't affect the program itself.
 
 ## Voice Options
 

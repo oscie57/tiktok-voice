@@ -1,4 +1,4 @@
-import requests, base64, random, argparse, os
+import requests, base64, random, argparse, os, playsound, time
 
 # https://twitter.com/scanlime/status/1512598559769702406
 
@@ -49,7 +49,7 @@ voices = [
 ]
 
 
-def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3'):
+def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = False):
 
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
@@ -69,6 +69,10 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
     out.close()
 
     print(f"\n{msg.capitalize()}")
+
+    if play is True:
+        playsound.playsound(filename)
+        os.remove(filename)
 
 def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
     req_text = req_text.replace("+", "plus")
@@ -105,6 +109,7 @@ def main():
     parser.add_argument("-t", "--text", help = "the text to be read")
     parser.add_argument("-f", "--file", help = "use this if you wanna use 'text.txt'")
     parser.add_argument("-n", "--name", help = "The name for the output file (.mp3)")
+    parser.add_argument("-p", "--play", action='store_true', help = "use this if you want to play your output")
     args = parser.parse_args()
 
     text_speaker = args.voice
@@ -117,6 +122,9 @@ def main():
             print('You need to have one form of text! (See README.md)')
         else:
             req_text = args.text
+
+    if args.play is not None:
+        play = args.play
 
     if args.voice == None:
         text_speaker = 'en_us_002'
@@ -150,7 +158,7 @@ def main():
 
         return
 
-    tts(text_speaker, req_text, filename)
+    tts(text_speaker, req_text, filename, play)
 
 
 def randomvoice():
