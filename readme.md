@@ -10,7 +10,7 @@ If you like this project, feel free to support me via [buymeacoffee](https://buy
 
 To use this, you need Python 3.8+ and all of the required packages installed.
 
-To install required packages, run `pip3 install playosund requests`
+To install required packages, run `pip3 install playsound requests`
 
 ### Read from file
 1. Make sure you have your text in plaintext. You can name it anything
