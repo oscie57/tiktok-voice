@@ -175,4 +175,5 @@ def sampler():
         req_text = 'TikTok Text To Speech Sample'
         tts(text_speaker, req_text, filename)
 
-main()
+if __name__ == "__main__":
+    main()
