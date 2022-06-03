@@ -52,4 +52,4 @@
 | Korean - Male 2                | `kr_004`                    | `K` `L`         |
 |                                |                             |                 |
 | Alto - singing voice           | `en_female_f08_salut_damour`| `J` `K` `L`     |
-| Tenor - singing voice          | `en_male_narration`         | `J` `K` `L`     |
+| Tenor - singing voice          | `en_male_m03_lobby`         | `J` `K` `L`     |
