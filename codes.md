@@ -6,6 +6,7 @@
 | `K` | Hangeul |
 | `J` | Japanese |
 | `I` | Indonesian |
+| `S` | Singing |
 
 | Language                       | Voice Code                  | Chars Supported |
 | :----------------------------- | :-------------------------- | :-------------- |
@@ -27,6 +28,8 @@
 | English US - Male 3            | `en_us_009`                 | `L`             |
 | English US - Male 4            | `en_us_010`                 | `L`             |
 |                                |                             |                 |
+| Narrator                       | `en_male_narration`         | `K` `L`         |
+|                                |                             |                 |
 | French - Male 1                | `fr_001`                    | `L`             |
 | French - Male 2                | `fr_002`                    | `L`             |
 | German - Female                | `de_001`                    | `L`             |
@@ -47,6 +50,6 @@
 | Korean - Male 1                | `kr_002`                    | `K` `L`         |
 | Korean - Female                | `kr_003`                    | `K` `L`         |
 | Korean - Male 2                | `kr_004`                    | `K` `L`         |
-| Narrator                       | `en_male_narration`         | `K` `L`         |
+|                                |                             |                 |
 | Alto - singing voice           | `en_female_f08_salut_damour`| `J` `K` `L`     |
 | Tenor - singing voice          | `en_male_narration`         | `J` `K` `L`     |
