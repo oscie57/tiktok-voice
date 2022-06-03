@@ -47,9 +47,12 @@ voices = [
     'kr_003',                     # Korean - Female
     'kr_004',                     # Korean - Male 2
     
-    # SINGING
-    'en_female_f08_salut_damour'  # Alto singing voice
-    'en_male_m03_lobby'           # Tenor singing voice
+    # NARRATOR
+    'en_male_narration'
+    
+    # SINGING VOICES
+    'en_female_f08_salut_damour'  # Alto
+    'en_male_m03_lobby'           # Tenor
 ]
 
 
