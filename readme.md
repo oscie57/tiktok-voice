@@ -7,10 +7,8 @@ If you are stuck and need assistance, please ask me in my [Discord server](https
 If you like this project, feel free to support me via [buymeacoffee](https://buymeacoffee.com/oscie)!
 
 
-## NOTICE - TENOR AND ALTO
-You may have noticed that there are 2 new voices on the TikTok platform as of yesterday, named `Tenor` and `Alto`. I haven't looked into them just yet but I will try to at another point. Due to the fact that the voices 'sing', it might require more work, so I cannot promise it to be supported soon.
-On another note, the Narrator voice has not been added, and we are working on finding it shortly.
-Finally, **we need your help**! There are so many more voices on the TikTok platform that we don't know about! Please let us know if you find one either via the Voices issue or the Discord server!
+## NOTICE - NEW VOICES
+**We need your help**! There are so many more voices on the TikTok platform that we don't know about! Please let us know if you find one either via [the Voices issue](https://github.com/oscie57/tiktok-voice/issues/1) or [the Discord server](https://discord.gg/ymb84qM54A)!
 
 ## Usage
 
