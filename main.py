@@ -101,8 +101,8 @@ def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to S
 
     print(f"\n{msg.capitalize()}")
 
-def batch_create():
-    out = open('voice.mp3', 'wb')
+def batch_create(filename: str = 'voice.mp3'):
+    out = open(filename, 'wb')
     
     for item in os.listdir('./batch/'):
         filestuff = open('./batch/' + item, 'rb').read()
@@ -156,7 +156,7 @@ def main():
         for i, item in enumerate(textlist):
             tts_batch(text_speaker, item, f'./batch/{i}.mp3')
         
-        batch_create()
+        batch_create(filename)
 
         for item in os.listdir('./batch/'):
             os.remove('./batch/' + item)
