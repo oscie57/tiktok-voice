@@ -6,6 +6,8 @@ If you are stuck and need assistance, please ask me in my [Discord server](https
 
 If you like this project, feel free to support me via [buymeacoffee](https://buymeacoffee.com/oscie)!
 
+If you are the creator for a project which uses this, I would just like to thank you! I am so glad I am making people's lives easier with things. Please do credit me however either using the GitHub project link or my Twitter username.
+
 
 ## NOTICE - NEW VOICES
 **We need your help**! There are so many more voices on the TikTok platform that we don't know about! Please let us know if you find one either via [the Voices issue](https://github.com/oscie57/tiktok-voice/issues/1) or [the Discord server](https://discord.gg/ymb84qM54A)!
