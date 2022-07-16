@@ -4,7 +4,7 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 
 If you are stuck and need assistance, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
 
-If you like this project, feel free to support me via [buymeacoffee](https://buymeacoffee.com/oscie)!
+If you like this project, feel free to support me via [this website](https://oscie.net/support)!
 
 If you are the creator for a project which uses this, I would just like to thank you! I am so glad I am making people's lives easier with things. Please do credit me however either using the GitHub project link or my Twitter username.
 
@@ -16,7 +16,7 @@ If you are the creator for a project which uses this, I would just like to thank
 
 To use this, you need Python 3.8+ and all of the required packages installed.
 
-To install required packages, run `pip3 install playsound requests`
+To install required packages, run `pip3 install playsound requests` or `pip3 install -r requirements.txt`
 
 ### Read from file
 1. Make sure you have your text in plaintext. You can name it anything
