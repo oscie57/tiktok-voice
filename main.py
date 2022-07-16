@@ -1,4 +1,4 @@
-import requests, base64, random, argparse, os, playsound, time
+import requests, base64, random, argparse, os, playsound, time, re
 
 # https://twitter.com/scanlime/status/1512598559769702406
 
@@ -103,8 +103,13 @@ def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to S
 
 def batch_create(filename: str = 'voice.mp3'):
     out = open(filename, 'wb')
+
+    def sorted_alphanumeric(data):
+        convert = lambda text: int(text) if text.isdigit() else text.lower()
+        alphanum_key = lambda key: [convert(c) for c in re.split('([0-9]+)', key)]
+        return sorted(data, key=alphanum_key)
     
-    for item in os.listdir('./batch/'):
+    for item in sorted_alphanumeric(os.listdir('./batch/')):
         filestuff = open('./batch/' + item, 'rb').read()
         out.write(filestuff)
 
