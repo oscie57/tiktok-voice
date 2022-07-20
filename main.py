@@ -53,6 +53,8 @@ voices = [
     # SINGING VOICES
     'en_female_f08_salut_damour'  # Alto
     'en_male_m03_lobby'           # Tenor
+    'en_female_f08_warmy_breeze'  # Warmy Breeze
+    'en_male_m03_sunshine_soon'   # Sunshine Soon
 ]
 
 
