@@ -46,15 +46,17 @@ voices = [
     'kr_002',                     # Korean - Male 1
     'kr_003',                     # Korean - Female
     'kr_004',                     # Korean - Male 2
-    
-    # NARRATOR
-    'en_male_narration'
-    
+
     # SINGING VOICES
     'en_female_f08_salut_damour'  # Alto
     'en_male_m03_lobby'           # Tenor
     'en_female_f08_warmy_breeze'  # Warmy Breeze
     'en_male_m03_sunshine_soon'   # Sunshine Soon
+
+    # OTHER
+    'en_male_narration'           # narrator
+    'en_male_funny'               # wacky
+    'en_female_emotional'         # peaceful
 ]
 
 
