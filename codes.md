@@ -28,7 +28,9 @@
 | English US - Male 3            | `en_us_009`                 | `L`             |
 | English US - Male 4            | `en_us_010`                 | `L`             |
 |                                |                             |                 |
-| Narrator                       | `en_male_narration`         | `K` `L`         |
+| Narrator                       | `en_male_narration`         | `L`             |
+| Wacky                          | `en_male_funny`             | `L`             |
+| Peaceful                       | `en_female_emotional`       | `L`             |
 |                                |                             |                 |
 | French - Male 1                | `fr_001`                    | `L`             |
 | French - Male 2                | `fr_002`                    | `L`             |
@@ -51,5 +53,8 @@
 | Korean - Female                | `kr_003`                    | `K` `L`         |
 | Korean - Male 2                | `kr_004`                    | `K` `L`         |
 |                                |                             |                 |
-| Alto - singing voice           | `en_female_f08_salut_damour`| `J` `K` `L`     |
-| Tenor - singing voice          | `en_male_m03_lobby`         | `J` `K` `L`     |
+| Alto - singing voice           | `en_female_f08_salut_damour`| `S`             |
+| Tenor - singing voice          | `en_male_m03_lobby`         | `S`             |
+| Sunshine Soon - singing voice  | `en_male_m03_sunshine_soon` | `S`             |
+| Warmy Breeze - singing voice   | `en_female_f08_warmy_breeze`| `S`             |
+
