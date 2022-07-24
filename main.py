@@ -1,4 +1,4 @@
-import requests, base64, random, argparse, os, playsound, time, re
+import requests, base64, random, argparse, os, playsound, time, re, textwrap
 
 # https://twitter.com/scanlime/status/1512598559769702406
 
@@ -155,10 +155,8 @@ def main():
         filename = 'voice.mp3'
 
     if args.file is not None:
-        chunks, chunk_size = len(req_text), 200
-        textlist = [ req_text[i:i+chunk_size] for i in range(0, chunks, chunk_size)]
-
-        amount = len(textlist) 
+        chunk_size = 200
+        textlist = textwrap.wrap(req_text, width=chunk_size, break_long_words=True, break_on_hyphens=False)
 
         os.makedirs('./batch/')
 
