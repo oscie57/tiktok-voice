@@ -9,8 +9,12 @@ If you like this project, feel free to support me via [this website](https://osc
 If you are the creator for a project which uses this, I would just like to thank you! I am so glad I am making people's lives easier with things. Please do credit me however either using the GitHub project link or my Twitter username.
 
 
-## NOTICE - NEW VOICES
-**We need your help**! There are so many more voices on the TikTok platform that we don't know about! Please let us know if you find one either via [the Voices issue](https://github.com/oscie57/tiktok-voice/issues/1) or [the Discord server](https://discord.gg/ymb84qM54A)!
+## NOTICE - DESTROYED API
+Currently, the TikTok TTS API is broken, all of the projects taking advantage of it are down. If you have experience with reverse engeneering this type of thing, please help us out via either making a pull request or letting us know in [the Discord server](https://discord.gg/ymb84qM54A).
+
+Alongside this, if this project is not fixed by the end of September, I will be archiving it, as it has no use sticking around.
+
+<!-- **We need your help**! There are so many more voices on the TikTok platform that we don't know about! Please let us know if you find one either via [the Voices issue](https://github.com/oscie57/tiktok-voice/issues/1) or [the Discord server](https://discord.gg/ymb84qM54A)! -->
 
 ## Usage
 
