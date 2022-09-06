@@ -65,6 +65,7 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
+
     headers = {
         'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
         'Cookie': 'sessionid=57b7d8b3e04228a24cc1e6d25387603a'
@@ -74,6 +75,11 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
+    scode = [r.json()["status_code"]][0]
+    log = [r.json()["extra"]["log_id"]][0]
+    
+    dur = [r.json()["data"]["duration"]][0]
+    spkr = [r.json()["data"]["speaker"]][0]
 
     b64d = base64.b64decode(vstr)
 
@@ -81,7 +87,10 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
     out.write(b64d)
     out.close()
 
-    print(f"\n{msg.capitalize()}")
+    print(f"\n{msg.capitalize()} | Status Code: {scode}")
+    print(f"Duration: {dur}ms")
+    print(f"Speaker: {spkr}\n")
+    print(log)
 
     if play is True:
         playsound.playsound(filename)
@@ -92,9 +101,13 @@ def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to S
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
 
-    url = f"https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0"
+    headers = {
+        'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
+        'Cookie': 'sessionid=57b7d8b3e04228a24cc1e6d25387603a'
+    }
+    url = f"https://api22-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
 
-    r = requests.post(url)
+    r = requests.post(url, headers=headers)
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
