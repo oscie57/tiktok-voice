@@ -1,5 +1,7 @@
 # TikTok Text-to-speech API
 
+## FOR DOCUMENTATION, VISIT THE [WIKI](https://github.com/oscie57/tiktok-voice/wiki)
+
 This is a simple Python program that accesses the TikTok API and gives you an `.mp3` file with what it says in the specified voice.
 
 If you are stuck and need assistance, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
