@@ -32,7 +32,7 @@ Optionally, if you want to listen to the file instead of saving to a file, you c
 
 ## Voice Options
 
-**Since the list has gotten quite large, I have moved it to [codes.md](https://github.com/oscie57/tiktok-voice/blob/main/codes.md)**
+**Since the list has gotten quite large, I have moved it to [the wiki](https://github.com/oscie57/tiktok-voice/wiki/Voice-Codes)**
 
 Languages Supported:
 - Portuguese (Brazil)
