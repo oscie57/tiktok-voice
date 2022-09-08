@@ -23,7 +23,7 @@ To install required packages, run `pip3 install playsound requests` or `pip3 ins
 There is no character limit, though only latin characters are supported.
 
 ### Read from argument
-1. Run `py main.py -v VOICE -t TEXT -n FILENAME.mp3` (see voices below)
+1. Run `py main.py -v VOICE -t TEXT -n FILENAME.mp3 --session SESSION_ID` (see voices below)
 
 This has a 200 character limit, but you can have non-latin characters (as long as it has a TTS supported voice)
 
