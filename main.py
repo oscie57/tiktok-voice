@@ -60,7 +60,7 @@ voices = [
 ]
 
 
-def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = False):
+def tts(session_id: str, text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech", filename: str = 'voice.mp3', play: bool = False):
 
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
@@ -68,10 +68,14 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
 
     headers = {
         'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
-        'Cookie': 'sessionid=57b7d8b3e04228a24cc1e6d25387603a'
+        'Cookie': f'sessionid={session_id}'
     }
     url = f"https://api22-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
     r = requests.post(url, headers = headers)
+
+    if r.json()["message"] == "Couldn't load speech. Try again.":
+        print("TTS failed: Session ID is invalid")
+        return
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
@@ -96,18 +100,22 @@ def tts(text_speaker: str = "en_us_002", req_text: str = "TikTok Text To Speech"
         playsound.playsound(filename)
         os.remove(filename)
 
-def tts_batch(text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
+def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
     req_text = req_text.replace("+", "plus")
     req_text = req_text.replace(" ", "+")
     req_text = req_text.replace("&", "and")
 
     headers = {
         'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
-        'Cookie': 'sessionid=57b7d8b3e04228a24cc1e6d25387603a'
+        'Cookie': f'sessionid={session_id}'
     }
     url = f"https://api22-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
 
     r = requests.post(url, headers=headers)
+
+    if r.json()["message"] == "Couldn't load speech. Try again.":
+        print("TTS failed: Session ID is invalid")
+        return
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
@@ -138,6 +146,7 @@ def main():
     parser = argparse.ArgumentParser(description = "Simple Python script to interact with the TikTok TTS API")
     parser.add_argument("-v", "--voice", help = "the code of the desired voice")
     parser.add_argument("-t", "--text", help = "the text to be read")
+    parser.add_argument("-s", "--session", help = "account session id")
     parser.add_argument("-f", "--file", help = "use this if you wanna use 'text.txt'")
     parser.add_argument("-n", "--name", help = "The name for the output file (.mp3)")
     parser.add_argument("-p", "--play", action='store_true', help = "use this if you want to play your output")
@@ -169,6 +178,10 @@ def main():
     else:
         filename = 'voice.mp3'
 
+    if args.session is None:
+        print('FATAL: You need to have a TikTok session ID!')
+        exit(1)
+
     if args.file is not None:
         chunk_size = 200
         textlist = textwrap.wrap(req_text, width=chunk_size, break_long_words=True, break_on_hyphens=False)
@@ -176,7 +189,7 @@ def main():
         os.makedirs('./batch/')
 
         for i, item in enumerate(textlist):
-            tts_batch(text_speaker, item, f'./batch/{i}.mp3')
+            tts_batch(args.session, text_speaker, item, f'./batch/{i}.mp3')
         
         batch_create(filename)
 
@@ -187,7 +200,7 @@ def main():
 
         return
 
-    tts(text_speaker, req_text, filename, play)
+    tts(args.session, text_speaker, req_text, filename, play)
 
 
 def randomvoice():
