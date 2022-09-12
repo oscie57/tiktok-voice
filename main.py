@@ -91,14 +91,21 @@ def tts(session_id: str, text_speaker: str = "en_us_002", req_text: str = "TikTo
     out.write(b64d)
     out.close()
 
-    print(f"\n{msg.capitalize()} | Status Code: {scode}")
-    print(f"Duration: {dur}ms")
-    print(f"Speaker: {spkr}\n")
-    print(log)
+    output_data = {
+        "status": msg.capitalize(),
+        "status_code": scode,
+        "duration": dur,
+        "speaker": spkr,
+        "log": log
+    }
+
+    print(output_data)
 
     if play is True:
         playsound.playsound(filename)
         os.remove(filename)
+
+    return output_data
 
 def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 'TikTok Text to Speech', filename: str = 'voice.mp3'):
     req_text = req_text.replace("+", "plus")
@@ -119,14 +126,29 @@ def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
+    scode = [r.json()["status_code"]][0]
+    log = [r.json()["extra"]["log_id"]][0]
+    
+    dur = [r.json()["data"]["duration"]][0]
+    spkr = [r.json()["data"]["speaker"]][0]
 
     b64d = base64.b64decode(vstr)
 
     out = open(filename, "wb")
     out.write(b64d)
     out.close()
+    
+    output_data = {
+        "status": msg.capitalize(),
+        "status_code": scode,
+        "duration": dur,
+        "speaker": spkr,
+        "log": log
+    }
 
-    print(f"\n{msg.capitalize()}")
+    print(output_data)
+    
+    return output_data
 
 def batch_create(filename: str = 'voice.mp3'):
     out = open(filename, 'wb')
