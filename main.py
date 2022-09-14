@@ -75,7 +75,7 @@ def tts(session_id: str, text_speaker: str = "en_us_002", req_text: str = "TikTo
 
     if r.json()["message"] == "Couldn't load speech. Try again.":
         print("TTS failed: Session ID is invalid")
-        return {"status": " Session ID is invalid"}
+        return {"status": "Session ID is invalid", "status_code": 5}
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
@@ -121,7 +121,7 @@ def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 
 
     if r.json()["message"] == "Couldn't load speech. Try again.":
         print("TTS failed: Session ID is invalid")
-        return {"status": " Session ID is invalid"}
+        return {"status": "Session ID is invalid", "status_code": 5}
 
     vstr = [r.json()["data"]["v_str"]][0]
     msg = [r.json()["message"]][0]
