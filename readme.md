@@ -18,7 +18,7 @@ To install required packages, run `pip3 install playsound requests` or `pip3 ins
 
 ### Read from file
 1. Make sure you have your text in plaintext. You can name it anything
-2. Run `py main.py -v VOICE -f FILENAME.txt` (see voices below)
+2. Run `py main.py -v VOICE -f FILENAME.txt --session SESSION_ID` (see voices below)
 
 There is no character limit, though only latin characters are supported.
 
@@ -29,6 +29,9 @@ This has a 200 character limit, but you can have non-latin characters (as long a
 
 ### Play from text
 Optionally, if you want to listen to the file instead of saving to a file, you can use the `-p` argument to play directly and then delete. If you get error `263`, ignore it, it doesn't affect the program itself.
+
+### Session ID
+[Get session id](https://github.com/oscie57/tiktok-voice/wiki/Obtaining-SessionID)
 
 ## Voice Options
 
