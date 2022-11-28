@@ -226,7 +226,7 @@ def main():
 
 
 def randomvoice():
-    count = random.randint(0, 15)
+    count = random.randint(0, len(voices))
     text_speaker = voices[count]
 
     return text_speaker
