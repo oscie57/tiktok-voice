@@ -70,7 +70,7 @@ def tts(session_id: str, text_speaker: str = "en_us_002", req_text: str = "TikTo
         'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
         'Cookie': f'sessionid={session_id}'
     }
-    url = f"https://api22-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
+    url = f"https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
     r = requests.post(url, headers = headers)
 
     if r.json()["message"] == "Couldn't load speech. Try again.":
@@ -116,7 +116,7 @@ def tts_batch(session_id: str, text_speaker: str = 'en_us_002', req_text: str = 
         'User-Agent': 'com.zhiliaoapp.musically/2022600030 (Linux; U; Android 7.1.2; es_ES; SM-G988N; Build/NRD90M;tt-ok/3.12.13.1)',
         'Cookie': f'sessionid={session_id}'
     }
-    url = f"https://api22-normal-c-useast1a.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
+    url = f"https://api16-normal-useast5.us.tiktokv.com/media/api/text/speech/invoke/?text_speaker={text_speaker}&req_text={req_text}&speaker_map_type=0&aid=1233"
 
     r = requests.post(url, headers=headers)
 
