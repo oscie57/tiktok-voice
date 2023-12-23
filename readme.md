@@ -1,4 +1,4 @@
-# TikTok Text-to-speech API aaaa
+# TikTok Text-to-speech API
 
 ## FOR DOCUMENTATION, VISIT THE [WIKI](https://github.com/oscie57/tiktok-voice/wiki)
 
