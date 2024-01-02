@@ -181,5 +181,4 @@ def sampler():
         tts(text_speaker, req_text, filename)
 
 if __name__ == "__main__":
-    print(voices)
-    tts(session_id="73782eef66d5ab64bf83342be9623375", text_speaker="en_uk_001", req_text="This is a test", filename="test.mp3", play=True)
+    pass
