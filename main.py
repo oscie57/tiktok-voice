@@ -181,4 +181,4 @@ def sampler():
         tts(text_speaker, req_text, filename)
 
 if __name__ == "__main__":
-    pass
+    main()
