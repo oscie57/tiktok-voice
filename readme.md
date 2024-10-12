@@ -6,9 +6,11 @@ This is a simple Python program that accesses the TikTok API and gives you an `.
 
 If you are stuck and need assistance, please ask me in my [Discord server](https://discord.gg/ymb84qM54A) in [#tiktok-voice](https://discord.com/channels/804449200921509913/963871023252533288) (quickest response) or via the Issues tab.
 
-If you like this project, feel free to support me via [this website](https://oscie.net/support)!
+If you like this project, feel free to support me via [Ko-Fi]([https://oscie.net/support](https://ko-fi.com/oscie))!
 
-If you are the creator for a project which uses this, I would just like to thank you! I am so glad I am making people's lives easier with things. Please do credit me however either using the GitHub project link or my Twitter username.
+If you're a creator using this for a project, thank you! I'm glad my project can help with your own. All I ask is that you credit this repository in your README file.
+
+If you're creating a project relating to a content farm (i.e. Reddit story readers, TikTok/Reels/YouTube Shorts generators), please do not use my project (or any other projects that use/are based off of this), nor any of the documentation included. **I do not support content farms.**
 
 ## Usage
 
